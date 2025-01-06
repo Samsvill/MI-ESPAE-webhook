@@ -4,7 +4,7 @@ const axios = require('axios');
 const app = express();
 
 const VERIFY_TOKEN = "mi-token-seguro";
-const ACCESS_TOKEN = "tu-access-token-de-facebook"; // Genera uno desde la consola de desarrolladores
+const ACCESS_TOKEN = "EAARfVZCwn130BOzyHBKF14ZBWZC1GM0733xokIZA3O3ZByLC1OI89hYbohLRLbD86tVFl5bG0ZAyZABceyiwSD9QZC30keVJsR1GjYD0iaCDTXaWtIt8zbmZCkS9Bju1gs8E3wjVS1Inx0iuY7jkZCKAB4Ege0UbHMtkkgpfzGxwdddpZCSf9B8bNhxvx9tIsqYXx6ZBVKVP1yFvaaA0p2xQ2QPwQSg6Ogt7ZC937PwZDZD"; // Genera uno desde la consola de desarrolladores
 
 app.use(bodyParser.json());
 
