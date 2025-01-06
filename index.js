@@ -38,8 +38,8 @@ app.post('/webhook', async (req, res) => {
                         console.log(`Nuevo formulario llenado. Form ID: ${formId}, Leadgen ID: ${leadgenId}`);
                         
                         // Obtener datos del lead
-                        const leadData = await getLeadData(leadgenId);
-                        console.log("Datos del lead:", leadData);
+                        //const leadData = await getLeadData(leadgenId);
+                        //console.log("Datos del lead:", leadData);
                     }
                 });
             });
@@ -53,7 +53,7 @@ app.post('/webhook', async (req, res) => {
 
 // Obtener datos del lead desde la API de Leads
 async function getLeadData(leadgenId) {
-    const url = `https://graph.facebook.com/v16.0/${leadgenId}?access_token=${ACCESS_TOKEN}`;
+    const url = `https://graph.facebook.com/v21.0/${leadgenId}?access_token=${ACCESS_TOKEN}`;
     const response = await axios.get(url);
     return response.data;
 }
