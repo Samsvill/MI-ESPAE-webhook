@@ -2,9 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
 const app = express();
+require('dotenv').config();
 
-const VERIFY_TOKEN = "mi-token-seguro";
-const ACCESS_TOKEN = "EAARfVZCwn130BOy5acueAVCPvTEYVnZAZBSOSOU2LZBJfq7ZBYXjCX4XRWP5JNdZBUW1rDpZCU4ZCJ247rJKZBPypKmstTOlhQSZA4YVRuJXYZCeWIgOfvfFZBDZAEYouM6lgQWY0JfsUZBuROm3ZB45VhBrfNioJxLvZBBh5H4YAG0JrQu5rovorfyAkhWxJZANTlQMmTawnLwMUdFer6dvrVQ64CE40SCclZAvqHs1OLuwsAqwZDZD"; // Genera uno desde la consola de desarrolladores
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 
 app.use(bodyParser.json());
 
